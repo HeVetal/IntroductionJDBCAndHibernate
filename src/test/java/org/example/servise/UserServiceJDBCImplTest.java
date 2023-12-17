@@ -5,6 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserServiceJDBCImplTest {
+    private final String testName = "Jone";
+    private final String testLastName= "Ivan";
+    private final byte testAge = 35;
+
+
 
     @Test
     void createUserTable() {
