@@ -99,9 +99,9 @@ public class UserDaoJDBCImpl implements UserDao {
 
     @Override
     public void clearUserTable() {
-        String sgl = "truncate table user";
+        String sql = "truncate table user";
         try (Statement statement = connection.createStatement()) {
-            statement.executeUpdate(sgl);
+            statement.executeUpdate(sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
